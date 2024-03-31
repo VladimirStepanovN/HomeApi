@@ -45,7 +45,7 @@ namespace HomeApi.Controllers
         }
 
         /// <summary>
-        /// Удаление устройства
+        /// Удаление устройства Задание 34.8.1 (HW-03)
         /// </summary>
         [HttpDelete]
         [Route("")]
