@@ -1,4 +1,5 @@
 ﻿using HomeApi.Data.Models;
+using HomeApi.Data.Queries;
 
 namespace HomeApi.Data.Repos
 {
@@ -8,6 +9,9 @@ namespace HomeApi.Data.Repos
     public interface IRoomRepository
     {
         Task<Room> GetRoomByName(string name);
+        Task<Room> GetRoomById(Guid id);
+        Task<Room[]> GetAllRooms();
         Task AddRoom(Room room);
+        Task UpdateRoom(Room room, UpdateRoomQuery query);
     }
 }
